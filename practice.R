@@ -48,8 +48,9 @@ newfish.ldatest<-predict(newfish.lda,newfish.test)
 newfish.ldatest$class
 #We see that the results agree with those obtained from the classification tree.
 #Let us examine how to apply QDA to this dataset.
+
 newfish.qda<-qda(Species~.,data=newfish)
-newfish.q<-read.table("newfish.qdat",h=T)
+newfish.q<-read.table("file:///C:/Users/Asus/Documents/classifng_fish/newfish.qdata.txt",h=T)
 newfish.qda<-qda(Species~.,data=newfish.q)
 newfish.qda<-qda(Species~Weight+L1+Height+Width+L21+L32,data=newfish.q)
 newfish.qdapred<-predict(newfish.qda,newfish.q)
