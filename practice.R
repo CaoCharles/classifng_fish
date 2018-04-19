@@ -49,9 +49,9 @@ newfish.ldatest$class
 #We see that the results agree with those obtained from the classification tree.
 #Let us examine how to apply QDA to this dataset.
 
-newfish.qda<-qda(Species~.,data=newfish)
+#newfish.qda<-qda(Species~.,data=newfish)
 newfish.q<-read.table("file:///C:/Users/Asus/Documents/classifng_fish/newfish.qdata.txt",h=T)
-newfish.qda<-qda(Species~.,data=newfish.q)
+#newfish.qda<-qda(Species~.,data=newfish.q)
 newfish.qda<-qda(Species~Weight+L1+Height+Width+L21+L32,data=newfish.q)
 newfish.qdapred<-predict(newfish.qda,newfish.q)
 predict(newfish.qda,newfish.test)$class
@@ -63,4 +63,4 @@ table(newfish$Species,newfish.knn)
 #We see that the apparent error rate for k = 3 is about 21%. For k = 2, we have:
 newfish.knn<-knn(newfish[,2:10],newfish[,2:10],newfish[,"Species"],k=2,prob=T)
 table(newfish$Species,newfish.knn)
-
+#這是新的
