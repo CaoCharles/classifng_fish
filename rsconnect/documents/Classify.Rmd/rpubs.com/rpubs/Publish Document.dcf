@@ -1,0 +1,10 @@
+name: Publish Document
+title:
+username:
+account: rpubs
+server: rpubs.com
+hostUrl: rpubs.com
+appId: https://api.rpubs.com/api/v1/document/381297/42b824c6da23432da8a48ea4ba6d3554
+bundleId: https://api.rpubs.com/api/v1/document/381297/42b824c6da23432da8a48ea4ba6d3554
+url: http://rpubs.com/choun811365/381297
+when: 1524299568.69229
